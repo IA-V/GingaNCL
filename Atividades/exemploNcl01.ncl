@@ -15,6 +15,7 @@
     <body>
         <port id="pInicio" component="video1" />
         <media id="video1" src="media/video1.mpg" descriptor="dVideo1" />
+        <port id="pImg" component="img1" />
         <media id="img1" src="media/chill_jake.jpg" descriptor="dImg1" />
     </body>
 </ncl>

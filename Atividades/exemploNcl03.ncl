@@ -22,12 +22,18 @@
                 <simpleAction role="start" />
             </causalConnector>
 
+            <causalConnector id="onBeginStart">
+                <connectorParam name="delay" />
+                <simpleCondition role="onBegin" />
+                <simpleAction role="start" />
+            </causalConnector>
+
         </connectorBase>
     </head>
     <body>
         <port id="pInicio" component="video1" />
-        <media id="video1" type="video/mpg" src="media/video1.mpg" descriptor="dVideo1" />
-        <media id="video2" type="video/mpg" src="media/Terran 2 - StarCraft" descriptor="dVideo2" />
+        <media id="video1" type="video/mpg" src="media/video1.mp4" descriptor="dVideo1" />
+        <media id="video2" type="video/mpg" src="media/video2.mpg" descriptor="dVideo2" />
         
         <link id="lVideoTermina" xconnector="onEndStart">
             <bind role="onEnd" component="video1" />

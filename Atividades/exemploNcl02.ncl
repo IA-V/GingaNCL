@@ -10,9 +10,8 @@
 
         <descriptorBase id="descritores">
             <descriptor id="dVideo1" region="rgVideo1" />
-            <descriptor id="dTexto1" region="rgTexto1">
-                <descriptorParam name="scroll" value="none" />
-            </descriptor>
+            <descriptor id="dTexto1" region="rgTexto1" />
+                
         </descriptorBase>
 
         <connectorBase id="conectores">
@@ -31,8 +30,8 @@
     </head>
     <body>
         <port id="pInicio" component="video1" />
-        <media id="video1" src="media/video1.mpg" descriptor="dVideo1" />
-        <media id="texto1" type="text/html" src="media/texto1.html" descriptor="dTexto1" />
+        <media id="video1" src="media/video1.mp4" descriptor="dVideo1" />
+        <media id="texto1" src="media/texto1.txt" descriptor="dTexto1" />
         
         <link id="lVideoInicia" xconnector="onBeginStart">
             <bind role="onBegin" component="video1" />
